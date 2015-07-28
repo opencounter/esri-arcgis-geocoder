@@ -6,7 +6,7 @@ module ESRI
 
           # CONSTANTS
 
-          PATH = "/arcgis/rest/services/World/GeocodeServer/reverseGeocode".freeze
+          PATH = ENV['ARCGIS_REVERSE_GEOCODE_PATH'] || "/arcgis/rest/services/World/GeocodeServer/reverseGeocode".freeze
 
         end
       end

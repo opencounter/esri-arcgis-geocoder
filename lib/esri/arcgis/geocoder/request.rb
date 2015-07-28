@@ -5,7 +5,7 @@ module ESRI
 
         # CONSTANTS
 
-        HOST = "geocode.arcgis.com".freeze
+        HOST = ENV['ARCGIS_HOST'] || "geocode.arcgis.com".freeze
         PATH = nil.freeze
         PORT = 80.freeze
 

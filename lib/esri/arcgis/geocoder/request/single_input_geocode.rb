@@ -6,7 +6,7 @@ module ESRI
 
           # CONSTANTS
 
-          PATH = "/arcgis/rest/services/World/GeocodeServer/find".freeze
+          PATH = ENV['ARCGIS_GEOCODE_PATH'] || "/arcgis/rest/services/World/GeocodeServer/find".freeze
 
           # QUERY
 
