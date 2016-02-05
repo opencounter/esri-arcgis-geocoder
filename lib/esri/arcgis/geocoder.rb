@@ -9,6 +9,14 @@ module ESRI
 
       # CLASS METHODS
 
+      def self.suggest(*args)
+        Request::Suggest.get(*args)
+      end
+
+      def self.find(*args)
+        Request::Find.get(*args)
+      end
+
       def self.geocode_single_input(*args)
         Request::SingleInputGeocode.get(*args)
       end
@@ -27,6 +35,8 @@ end
 
 require "esri/arcgis/geocoder/request"
 require "esri/arcgis/geocoder/request/query"
+require "esri/arcgis/geocoder/request/suggest"
+require "esri/arcgis/geocoder/request/find"
 require "esri/arcgis/geocoder/request/single_input_geocode"
 require "esri/arcgis/geocoder/request/multi_input_geocode"
 require "esri/arcgis/geocoder/request/reverse_geocode"
