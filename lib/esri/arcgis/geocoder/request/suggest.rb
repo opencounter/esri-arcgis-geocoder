@@ -15,9 +15,9 @@ module ESRI
             # ATTRIBUTES
 
             attribute :text, String
+            attribute :maxSuggestions, Integer
             attribute :location, String
-            attribute :distance, String
-            attribute :maxSuggestions, String
+            attribute :distance, Float
           end
 
         end

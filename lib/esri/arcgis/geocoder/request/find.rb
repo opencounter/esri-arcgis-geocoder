@@ -16,6 +16,9 @@ module ESRI
 
             attribute :text, String
             attribute :magicKey, String
+            attribute :outFields, String, default: OUT_FIELDS
+            attribute :location, String
+            attribute :distance, Float
           end
 
         end
